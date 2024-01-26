@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="{{ path('app_home')}}">Logo</a>
+    <ul class="navbar-nav mr-auto">
+        {% for link in links %}
+        <li class="nav-item">
+            <twig:Link 
+                title="{{ link.title }}"
+                href="{{ link.href }}"
+            />
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
