@@ -8,5 +8,5 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 class Link
 {
     public string $title;
-    public string $href;
+    public string $url;
 }
