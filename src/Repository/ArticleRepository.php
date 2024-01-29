@@ -28,6 +28,7 @@ class ArticleRepository extends ServiceEntityRepository
         // For example, use the query builder to search for articles with titles containing the search term
         $result = $this->createQueryBuilder('a')
             ->andWhere('a.title LIKE :searchTerm')
+            ->orWhere('a.text LIKE :searchTerm')
             ->setParameter('searchTerm', '%'.$searchTerm.'%')
             ->getQuery()
             ->getResult();
