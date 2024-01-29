@@ -2,10 +2,7 @@ $(document).ready(function() {
     $('#searchArticles').on("input", function(e) {
         e.preventDefault();
 
-        // Get the search term from the form
         var searchTerm = $('#searchArticles').val();
-
-        // Send AJAX request to the Symfony controller
         $.ajax({
             url: '/article/search',
             type: 'GET',
