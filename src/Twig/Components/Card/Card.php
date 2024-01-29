@@ -8,6 +8,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent(exposePublicProps: false)]
 class Card
 {
+    public int $id;
     public string $image;
     public string $alt;
     public string $title;

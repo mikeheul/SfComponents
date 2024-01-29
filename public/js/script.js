@@ -32,7 +32,7 @@ $(document).ready(function() {
                         <h5 class="card-title">${article.title}</h5>
                         <p class="card-text">${article.text}</p>
                     </div>
-                    <a href="#" class="btn btn-primary">Voir plus...</a>
+                    <a href="${article.id}" class="btn btn-primary">Voir plus...</a>
                 </div>`
             )
         })

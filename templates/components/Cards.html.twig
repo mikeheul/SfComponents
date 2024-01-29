@@ -1,10 +1,11 @@
 <div class="cards">
     {% for card in cards %}
     <twig:Card 
+        id="{{ card.id }}"
         image="{{ card.img }}" 
         alt="{{ card.alt }}"
         title="{{ card.title }}" 
-        text="{{ card.text }}" 
+        text="{{ card.text }}"
     />
     {% endfor %}
 </div>
